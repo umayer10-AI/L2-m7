@@ -16,8 +16,6 @@ const pool = new Pool({
   connectionString: config.connecting_string,
 });
 
-// console.log(pool)
-
 const initDb = async () => {
   try {
     await pool.query(`
